@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+.computerChoice {
+    height: 30vh;
+    width: 15vw;
+}
+.playerChoice {
+    height: 30vh;
+    width: 15vw;
+}
+.pierre {
+    height: 15vh;
+    width: 20vw;
+    background:url("../img/pierre3-removebg-preview.png") no-repeat;
+}
+.feuille {
+    height: 15vh;
+    width: 20vw;
+    background: url("../img/feuille4-removebg-preview.png") no-repeat;
+}
+.ciseaux {
+    height: 15vh;
+    width: 20vw;
+    background: url("../img/ciseaux3-removebg-preview.png")no-repeat;
+}
+.YouWin {
+    height: 20vh;
+    width: 40vw;
+    background: green;
+    font-size: 3em;
+    color: ivory;
+}
+.YouLoose {
+    height: 20vh;
+    width: 40vw;
+    background: red;
+    font-size: 3em;
+    color: ivory;
+}
+.Draw {
+    height: 20vh;
+    width: 40vw;
+    background: grey;
+    font-size: 3em;
+    color: ivory;
+}
+.shi {
+    font-size: 6em;
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: maroon;
+}
+.center {
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid  5px;
+}
+.result {
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.versus {
+    width: 10%;
+    font-size: 6em;
+}
+.player {
+    width: 15%;
+    font-size: 3em;
+    /* display:flex ;
+    justify-content: flex-start; */
+}
+.computer {
+    width: 10%;
+    font-size: 3em;
+}
+.boxButtonPierre {
+    width: 10vw;
+    height:20vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    background:url("../img/pierrebg-removebg-preview.png") center no-repeat;
+    background-size: 100%;
+}
+button {
+    border-radius: 50%;
+    color:ivory;
+    background: none;
+    font-size: 2.5em;
+}
+button:hover {
+    background-color: rgb(25, 25, 216), 0.4;
+}
+.boxButtonFeuille {
+    width: 10vw;
+    height:20vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    background: url("../img/feuillebg-removebg-preview.png") center no-repeat;
+    background-size: 100%;
+}
+.boxButtonCiseaux {
+    width: 10vw;
+    height:20vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    background: url("../img/ciseauxbg-removebg-preview.png") center no-repeat;
+    background-size: 100%;
+}
+.contentButton {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(90deg, brown, green, silver ) ;
+}
+.fou {
+    font-size: 6em;
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: green no-repeat center;
+    background-size: 100%;
+}
+.mi {
+    font-size: 6em;
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: silver no-repeat center;
+    background-size: 100%;
+}
+.chi {
+    font-size: 6em;
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(purple, red, green, yellow);
+    background-size: 100%;
+    animation: animate infinite;
+}
+.chi p {
+    font-size: 2.5em;
+    color: ivory;
+    animation: animate infinite 10s;
+}
+@keyframes animate {
+    0% {
+    }
+    50% {
+    transform: translateX(30vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+.defaite {
+    color: ivory;
+    font-size: 1.5em;
+    width: 15%;
+    height: 10%;
+}
+.victoire {
+    color: ivory;
+    font-size: 1.5em;
+    width: 15%;
+    height: 10%;
+}
